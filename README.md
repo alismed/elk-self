@@ -14,7 +14,7 @@ Using:
 
 **Logstash Plugin Configuration**
 
-The configuration is defined in the [`sfdc_elf.config`](sfdc_elf.config.exmple) file.
+The configuration is defined in the [`sfdc_elf.config`](sfdc_elf.config.example) file.
 
 ```
 cp sfdc_elf.config.example sfdc_elf.config
@@ -37,7 +37,7 @@ docker build -t elk_selv .
 
 **Run Docker**
 ```
-docker run -it -p 8081:5601 elk_selv
+docker run -p 5601:5601 -p 9200:9200 elk_selv
 ```
 
 
